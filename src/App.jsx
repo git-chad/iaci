@@ -1,13 +1,15 @@
-import './App.css'
+import "./App.css";
+import Hero from "./pages/Hero";
+
 
 function App() {
   return (
     <>
       <div>
-        <h1 className='bg-red-500 p-5 rounded-xl'>Hola tronco</h1>
+        <Hero />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
