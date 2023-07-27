@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <div className="overflow-x-auto overflow-y-auto overflow-scroll">
+      <div className="overflow-x-hidden overflow-y-auto">
         <Hero />
         <Placeholder />
       </div>
