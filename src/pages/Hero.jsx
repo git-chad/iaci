@@ -1,5 +1,3 @@
-import React from 'react'
-import Shape01 from '../assets/images/1x/shape01.png'
 import Navbar from '../components/Navbar'
 
 const hero = () => {
