@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "PP Agrandir Regular";
+  src: url(./fonts/AgrandirPackage/PP-Agrandir-Regular.woff) format("woff"),
+    url(./fonts/AgrandirPackage/PP-Agrandir-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "PP Agrandir Bold";
+  font-weight: 620;
+  src: url(./fonts/AgrandirPackage/PP-Agrandir-Text-Bold.woff) format("woff"),
+    url(./fonts/AgrandirPackage/PP-Agrandir-Text-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Orkney";
+  src: url(./fonts/OrkneyPackage/Orkney-Regular.woff) format("woff"),
+    url(./fonts/OrkneyPackage/Orkney-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Orkney Bold";
+  font-weight: 700;
+  src: url(./fonts/OrkneyPackage/Orkney-Bold.woff) format("woff"),
+    url(./fonts/OrkneyPackage/Orkney-Bold.woff2) format("woff2");
+}
+
+.ppa {
+  font-family: "PP Agrandir Regular";
+}
+
+.ork {
+    font-family: "Orkney";
+}
