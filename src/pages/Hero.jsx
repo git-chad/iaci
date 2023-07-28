@@ -1,12 +1,9 @@
-import Navbar from "../components/Navbar";
 import Shape01 from "../assets/images/shape01.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <div className="p-0 m-0">
-      <Navbar />
-
       <div className="relative flex flex-col w-screen h-screen bg-[#F5F5F5]">
         {/* Background Image */}
         <div className="opacity-60">
@@ -39,7 +36,7 @@ const Hero = () => {
               className="ppa mt-10 text-3xl w-[700px] leading-[1.5]"
             >
               We empower students to achieve their goals with{" "}
-              <span className="underline">confidence and purpose.</span> 
+              <span className="underline">confidence and purpose.</span>
             </motion.p>
           </div>
         </div>
