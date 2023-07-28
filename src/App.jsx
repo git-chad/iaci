@@ -1,7 +1,10 @@
 import "./App.css";
+
 import CoursesAndExams from "./pages/coursesAndExams";
 import Hero from "./pages/hero";
 import Lenis from "@studio-freight/lenis";
+import EnglishLevelPage from './pages/TestForm'
+
 
 function App() {
   const lenis = new Lenis();
@@ -19,8 +22,12 @@ function App() {
 
   return (
     <>
+      <div>
+        <Hero/>
+        <EnglishLevelPage/>
       <div className="overflow-x-hidden overflow-y-auto">
         <Hero />
+        <EnglishLevelPage/>
         <CoursesAndExams />
       </div>
     </>
