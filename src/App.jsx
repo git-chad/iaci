@@ -22,9 +22,6 @@ function App() {
 
   return (
     <>
-      <div>
-        <Hero/>
-        <EnglishLevelPage/>
       <div className="overflow-x-hidden overflow-y-auto">
         <Hero />
         <EnglishLevelPage/>
