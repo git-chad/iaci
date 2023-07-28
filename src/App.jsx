@@ -1,5 +1,5 @@
 import "./App.css";
-import Placeholder from "./pages/Placeholder";
+import CoursesAndExams from "./pages/coursesAndExams";
 import Hero from "./pages/hero";
 import Lenis from "@studio-freight/lenis";
 
@@ -21,7 +21,7 @@ function App() {
     <>
       <div className="overflow-x-hidden overflow-y-auto">
         <Hero />
-        <Placeholder />
+        <CoursesAndExams />
       </div>
     </>
   );
