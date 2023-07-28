@@ -9,7 +9,7 @@ body {
 
 @font-face {
   font-family: "PP Agrandir Regular";
-  src: url(./fonts/AgrandirPackage/PP-Agrandir-Regular.woff) format("woff"),
+  src: url(.assets/fonts/AgrandirPackage/PP-Agrandir-Regular.woff) format("woff"),
     url(./fonts/AgrandirPackage/PP-Agrandir-Regular.woff2) format("woff2");
 }
 
