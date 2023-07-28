@@ -1,5 +1,5 @@
 import "./App.css";
-
+import Navbar from "./components/Navbar";
 import CoursesAndExams from "./pages/coursesAndExams";
 import Hero from "./pages/hero";
 import Lenis from "@studio-freight/lenis";
@@ -23,6 +23,7 @@ function App() {
   return (
     <>
       <div className="overflow-x-hidden overflow-y-auto">
+        <Navbar/>
         <Hero />
         <EnglishLevelPage/>
         <CoursesAndExams />
