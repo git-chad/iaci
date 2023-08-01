@@ -1,5 +1,6 @@
 import Shape01 from "../assets/images/shape01.png";
 import { motion } from "framer-motion";
+import Student01 from "../assets/images/Student01.png"
 
 const Hero = () => {
   return (
@@ -15,6 +16,7 @@ const Hero = () => {
             src={Shape01}
             alt="Shape01"
           />
+          <img className="absolute bottom-0 left-0 h-[500px]" src={Student01}/>
         </div>
 
         <div className="w-full h-full z-10 flex flex-col justify-center items-center">
