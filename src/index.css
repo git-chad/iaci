@@ -5,7 +5,10 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Helvetica", "Arial";
 }
+
+/* Custom font families */
 
 @font-face {
   font-family: "PP Agrandir Regular";
@@ -33,6 +36,8 @@ body {
     url(./assets/fonts/OrkneyPackage/Orkney-Bold.woff2) format("woff2");
 }
 
+/* Custom font classes */
+
 .ppa {
   font-family: "PP Agrandir Regular";
 }
@@ -40,6 +45,8 @@ body {
 .ork {
     font-family: "Orkney";
 }
+
+/* Custom Navbar */
 
 body::-webkit-scrollbar {
     background-color: #F5F5F5;
@@ -58,4 +65,11 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-button {
     display:none;
+}
+
+/* Blur effect */
+
+  .blur-lg {
+  backdrop-filter: blur(20px); 
+  -webkit-backdrop-filter: blur(20px); 
 }
