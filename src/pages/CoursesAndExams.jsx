@@ -5,11 +5,15 @@ import { motion } from "framer-motion";
 const PageTransition = ({ children }) => {
   const [currentPage, setCurrentPage] = useState(0);
 
-  // Function to switch pages after 5 seconds
+  const changePage = (page) => {
+    setCurrentPage(page);
+  };
+
+  // switch pages automatic timer
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentPage((prevPage) => (prevPage === 0 ? 1 : 0));
-    }, 8000);
+    }, 20000); // 20 secs
 
     return () => clearInterval(interval);
   }, []);
@@ -22,6 +26,26 @@ const PageTransition = ({ children }) => {
       transition={{ duration: 1 }}
     >
       {children[currentPage]}
+      <div className="absolute top-4 left-4 flex space-x-2">
+        <motion.button
+          onClick={() => changePage(0)}
+          className={`ppa text-xl px-3 py-2 ${
+            currentPage === 0 ? "text-[#AB364D]" : "text-black"
+          }`}
+          whileHover={{ y: -2 }} transition={{ duration: 0.15 }}
+        >
+          Courses
+        </motion.button>
+        <motion.button
+          onClick={() => changePage(1)}
+          className={`ppa text-xl px-3 py-2 ${
+            currentPage === 1 ? "text-[#AB364D]" : "text-black"
+          }`}
+          whileHover={{ y: -2 }} transition={{ duration: 0.15 }}
+        >
+          Exams
+        </motion.button>
+      </div>
     </motion.div>
   );
 };
@@ -81,7 +105,7 @@ const ExamsPage = () => {
         transition={{ duration: 0.66, delay: 1.5 }}
         className="ork text-7xl font-bold"
       >
-        English & American Courses.
+        English & American Exams.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, scale: 1, x: 100 }}
