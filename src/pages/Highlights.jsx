@@ -19,7 +19,7 @@ const Highlights = () => {
         </div>
 
         <div className="side2 z-10 flex flex-col h-screen w-[40%] p-6 items-center justify-center">
-          <h1 className="ork text-[6.3rem]">Highlights</h1>
+          <h1 className="ork font-bold text-[6.3rem]">Highlights</h1>
           <p className="ppa mt-8 text-2xl leading-[1.5] text-justify">
             At IACI, we create lasting memories. Our institute is dedicated to
             fostering student growth and development, empowering them to reach
