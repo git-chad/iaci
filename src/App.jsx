@@ -5,6 +5,7 @@ import Hero from "./pages/Hero";
 import Footer from "./components/Footer";
 import Lenis from "@studio-freight/lenis";
 import EnglishLevelPage from './pages/TestForm'
+import Highlights from "./pages/Highlights";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <div className="overflow-x-hidden overflow-y-auto">
         <Navbar/>
         <Hero />
+        <Highlights/>
         <EnglishLevelPage/>
         <CoursesAndExams />
         <Footer />
