@@ -1,9 +1,9 @@
 import "./App.css";
-
 import CoursesAndExams from "./pages/coursesAndExams";
 import Hero from "./pages/hero";
 import Lenis from "@studio-freight/lenis";
 import EnglishLevelPage from './pages/TestForm'
+import Highlights from "./pages/Highlights";
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
     <>
       <div className="overflow-x-hidden overflow-y-auto">
         <Hero />
+        <Highlights/>
         <EnglishLevelPage/>
         <CoursesAndExams />
       </div>

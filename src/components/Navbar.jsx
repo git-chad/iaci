@@ -4,8 +4,8 @@ import LogoSmall from "../assets/images/LogoSmall.svg";
 const Navbar = () => {
   return (
     <nav className="absolute top-0 left-0 w-full p-8 z-50">
-      <div className="max-w-5xl mx-auto flex items-center justify-between">
-        <div className="logo-container">
+      <div className="max-w-[1376px] mx-auto flex items-center justify-between">
+        <div  className="logo-container cursor-pointer">
           <img src={LogoSmall}></img>
           <h1 className="ork text-2xl font-bold">IACI</h1>
         </div>
