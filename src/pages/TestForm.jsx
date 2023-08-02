@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 
 const EnglishLevelPage = () => {
   return (
@@ -12,9 +13,17 @@ const EnglishLevelPage = () => {
           English level, we ll be able to
           recommend the perfect course to you
         </p>
-        <a href="#" className="text-black hover:underline py-2 px-4 ppa"> 
-          Test my skills
-        </a>
+        <motion.div
+        className="btn flex mt-8 py-2 px-4"
+        initial={{ opacity: 0, scale: 1, y: 20 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.66, delay: 2.5 }}
+      >
+        <button className="ppa hover:underline transition-all text-black font-bold text-lg">
+          Learn More
+        </button>
+        <span className="material-symbols-outlined pl-2">arrow_outward</span>
+      </motion.div>
       </div>
     </div>
   );
