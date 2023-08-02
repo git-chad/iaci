@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import CoursesAndExams from "./pages/coursesAndExams";
-import Hero from "./pages/Hero";
+import CoursesAndExams from "./pages/CoursesAndExams";
+// import Hero from "./pages/Hero";
 import Footer from "./components/Footer";
 import Lenis from "@studio-freight/lenis";
 import EnglishLevelPage from './pages/TestForm'
