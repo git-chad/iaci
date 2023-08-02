@@ -23,13 +23,20 @@ const Highlights = () => {
 
           <p className="ppa mt-8 text-2xl leading-[1.5] text-justify">
             At IACI, we create lasting memories. Our institute is dedicated to
-            fostering student <span className="underline">growth and development</span>, empowering them to reach
-            their full potential. Explore the possibilities with us.
+            fostering student{" "}
+            <span className="underline">growth and development</span>,
+            empowering them to reach their full potential. Explore the
+            possibilities with us.
           </p>
-          <button className="ppa mt-8 hover:underline transition-all text-black font-bold py-2 px-4">
-            Take a look
-          </button>
-          <span className="material-symbols-outlined text-3xl text-[#7A8574] cursor-default">eco</span>
+          <div className="btn flex mt-8 py-2 px-4">
+            <button className="ppa  hover:underline transition-all text-lg text-black font-bold">
+              Take a look
+            </button>
+            <span className="material-symbols-outlined pl-2">arrow_outward</span>
+          </div>
+          <span className="material-symbols-outlined text-3xl text-[#7A8574] cursor-default">
+            eco
+          </span>
         </div>
       </div>
     </div>

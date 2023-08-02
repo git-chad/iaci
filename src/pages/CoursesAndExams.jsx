@@ -32,7 +32,8 @@ const PageTransition = ({ children }) => {
           className={`ppa text-xl px-3 py-2 ${
             currentPage === 0 ? "text-[#AB364D]" : "text-black"
           }`}
-          whileHover={{ y: -2 }} transition={{ duration: 0.15 }}
+          whileHover={{ y: -2 }}
+          transition={{ duration: 0.15 }}
         >
           Courses
         </motion.button>
@@ -41,7 +42,8 @@ const PageTransition = ({ children }) => {
           className={`ppa text-xl px-3 py-2 ${
             currentPage === 1 ? "text-[#AB364D]" : "text-black"
           }`}
-          whileHover={{ y: -2 }} transition={{ duration: 0.15 }}
+          whileHover={{ y: -2 }}
+          transition={{ duration: 0.15 }}
         >
           Exams
         </motion.button>
@@ -77,14 +79,18 @@ const CoursesPage = () => {
         From kindergarten to company trainings, we help our students achieve
         theirspecific objectives through our varied courses.
       </motion.p>
-      <motion.button
+
+      <motion.div
+        className="btn flex mt-8 py-2 px-4"
         initial={{ opacity: 0, scale: 1, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.66, delay: 2.5 }}
-        className="ppa mt-10  hover:underline transition-all text-black font-bold py-2 px-4"
       >
-        Learn More
-      </motion.button>
+        <button className="ppa hover:underline transition-all text-black font-bold text-lg">
+          Learn More
+        </button>
+        <span className="material-symbols-outlined pl-2">arrow_outward</span>
+      </motion.div>
     </div>
   );
 };
@@ -117,14 +123,17 @@ const ExamsPage = () => {
         can also help you get top grades at American exams such as TOEFL or
         IELTS.
       </motion.p>
-      <motion.button
+      <motion.div
+        className="btn flex mt-8 py-2 px-4"
         initial={{ opacity: 0, scale: 1, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.66, delay: 2.5 }}
-        className="ppa mt-10  hover:underline transition-all text-black font-bold py-2 px-4"
       >
-        Learn More
-      </motion.button>
+        <button className="ppa hover:underline transition-all text-black font-bold text-lg">
+          Learn More
+        </button>
+        <span className="material-symbols-outlined pl-2">arrow_outward</span>
+      </motion.div>
     </div>
   );
 };
