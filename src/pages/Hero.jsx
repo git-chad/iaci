@@ -1,4 +1,4 @@
-import Shape01 from "../assets/images/shape01.png";
+import Shape04 from "../assets/images/Shape04.png";
 import { motion } from "framer-motion";
 import Student01 from "../assets/images/Student01.png"
 
@@ -13,7 +13,7 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 1.33, delay: 0.5 }}
             className="absolute top-0 right-0 h-full z-0"
-            src={Shape01}
+            src={Shape04}
             alt="Shape01"
           />
           <img className="absolute bottom-0 left-0 h-[500px]" src={Student01}/>

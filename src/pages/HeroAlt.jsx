@@ -1,11 +1,11 @@
-import Shape02 from "../assets/images/shape02.png";
+import Shape04 from "../assets/images/shape04.png";
 import { motion } from "framer-motion";
 import StudentGroup03 from "../assets/images/StudentGroup03.png";
 
 const HeroAlt = () => {
   return (
     <div className="relative p-0 m-0 flex items-center justify-center w-screen h-screen bg-[#F5F5F5]">
-      <img className="absolute opacity-50 left-0 bottom-0 h-full" src={Shape02} />
+      <img className="absolute opacity-50 left-0 bottom-0 h-full" src={Shape04} />
 
       <div className="flex max-w-[1376px] w-full h-screen">
         <div className="z-10 side1 flex flex-col h-screen w-[40%] p-2 justify-center items-center">
