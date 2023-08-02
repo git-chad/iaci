@@ -1,4 +1,4 @@
-import Shape04 from "../assets/images/shape04.png";
+import Shape04 from "../assets/images/Shape04.png";
 import { motion } from "framer-motion";
 import StudentGroup03 from "../assets/images/StudentGroup03.png";
 
