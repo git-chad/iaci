@@ -1,12 +1,10 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import CoursesAndExams from "./pages/CoursesAndExams";
-// import Hero from "./pages/Hero";
 import Footer from "./components/Footer";
 import Lenis from "@studio-freight/lenis";
-import EnglishLevelPage from './pages/TestForm'
-import Highlights from "./pages/Highlights";
-import HeroAlt from "./pages/HeroAlt";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/homePage/HomePage";
+import HighlightsPage from "./pages/highlightsPage/Highlights";
 
 
 function App() {
@@ -25,15 +23,12 @@ function App() {
 
   return (
     <>
-      <div className="overflow-x-hidden overflow-y-auto">
-        <Navbar/>
-        {/* <Hero /> */}
-        <HeroAlt/>
-        <Highlights/>
-        <EnglishLevelPage/>
-        <CoursesAndExams />
-        <Footer />
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/Highlights" element={<HighlightsPage />} />
+      </Routes>
+      <Footer />
     </>
   );
 }
