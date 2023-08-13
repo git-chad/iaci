@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Shape02 from "../assets/images/Shape02.png";
+import Shape02 from "../../assets/images/Shape02.png";
 import { motion } from "framer-motion";
 
 const PageTransition = ({ children }) => {

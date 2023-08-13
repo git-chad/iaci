@@ -1,5 +1,5 @@
-import Shape03 from "../assets/images/Shape03.png";
-import StudentGroup01 from "../assets/images/StudentGroup01.jpg";
+import Shape03 from "../../assets/images/Shape03.png";
+import StudentGroup01 from "../../assets/images/StudentGroup01.jpg";
 
 const Highlights = () => {
   return (
